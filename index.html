@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Webpage</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Precious Khyle">
+    <meta name="viewport" content="width=device-width , initial scale=1.0">
+</head>
+
+<body>
+    <form>
+
+        <div id = "revealedLetters">
+            <!-- Add Function randomize index -->
+            <!-- Function count characters  and output dash in word corrseponding to the randomized index -->
+        </div>
+        <div id = "keyBoard">
+            <h1>
+            <button type="button" onclick="keyBoardLetter('Q')">Q</button>
+            <button type="button" onclick="keyBoardLetter('W')">W</button>
+            <button type="button" onclick="keyBoardLetter('E')">E</button>
+            <button type="button" onclick="keyBoardLetter('R')">R</button>
+            <button type="button" onclick="keyBoardLetter('T')">T</button>
+            <button type="button" onclick="keyBoardLetter('Y')">Y</button>
+            <button type="button" onclick="keyBoardLetter('U')">U</button>
+            <button type="button" onclick="keyBoardLetter('I')">I</button>
+            <button type="button" onclick="keyBoardLetter('O')">O</button>
+            <button type="button" onclick="keyBoardLetter('P')">P</button>
+            <button type="button" onclick="onBackSpacePress()">Backspace</button>
+            <br>
+            <button type="button" onclick="keyBoardLetter('A')">A</button>
+            <button type="button" onclick="keyBoardLetter('S')">S</button>
+            <button type="button" onclick="keyBoardLetter('D')">D</button>
+            <button type="button" onclick="keyBoardLetter('F')">F</button>
+            <button type="button" onclick="keyBoardLetter('G')">G</button>
+            <button type="button" onclick="keyBoardLetter('H')">H</button>
+            <button type="button" onclick="keyBoardLetter('J')">J</button>
+            <button type="button" onclick="keyBoardLetter('K')">K</button>
+            <button type="button" onclick="keyBoardLetter('L')">L</button>
+            <br>
+            <button type="button" onclick="keyBoardLetter('Z')">Z</button>
+            <button type="button" onclick="keyBoardLetter('X')">X</button>
+            <button type="button" onclick="keyBoardLetter('C')">C</button>
+            <button type="button" onclick="keyBoardLetter('V')">V</button>
+            <button type="button" onclick="keyBoardLetter('B')">B</button>
+            <button type="button" onclick="keyBoardLetter('N')">N</button>
+            <button type="button" onclick="keyBoardLetter('M')">M</button>
+            <br>
+            <button type="button" onclick="space(' ')"> Spacebar </button>
+            </h1>
+
+            <!--Function to determine if the letter clicked is a letter in the word-->
+            <!--Function to determine if the letter clicked is repeated-->
+        </div>
+
+    </form>
+
+    <p id="text"></p>
+    <script src="script.js"></script>
+</body>
+
+</html>
