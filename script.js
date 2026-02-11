@@ -2,11 +2,11 @@ const wordArray = [
     "model", "graph", "method", "framework", "bias", 
     "chart", "trend", "vacuole", "plant", "phylum", 
     "reptile", "virus", "genus", "family", "domain",
-    "xylem", "muscles", "pathogen", "artery",  "gland"
+    "xylem", "muscle", "pathogen", "vein",  "gland"
 ];
 
 function generateRandomIndex() {
-    let randomIndex = Math.floor(Math.random()*19); //Add code to generate random index
+    let randomIndex = Math.floor(Math.random()*wordArray.length); //Add code to generate random index
     return randomIndex; //index gets returned
 }
 
@@ -68,4 +68,5 @@ function hangmanGraphics(playerLives) {
 
 function playHangman() {
     let playerLives = 3;
+
 }
