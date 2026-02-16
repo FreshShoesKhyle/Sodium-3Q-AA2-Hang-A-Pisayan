@@ -1,37 +1,27 @@
-const wordArray = [
+function generateRandomIndex() {
+
+    const wordArray = [
     "model", "graph", "method", "framework", "bias", 
     "chart", "trend", "vacuole", "plant", "phylum", 
     "reptile", "virus", "genus", "family", "domain",
     "xylem", "muscle", "pathogen", "vein",  "gland"
-];
+    ];
 
-function generateRandomIndex() {
-    let randomIndex = Math.floor(Math.random()*wordArray.length); //Add code to generate random index
-    return randomIndex; //index gets returned
+    const randomIndex = Math.floor(Math.random()*wordArray.length);
+    const randomWord = wordArray[randomIndex];
+    const letters = randomWord.split("");
+    const lettersArray = [letters]; 
+    console.log(randomIndex);
+    console.log(randomWord);
+    console.log(letters);
 }
 
-function storeLetters() {
-    let length = wordArray[randomIndex].length;
-    let lettersArray = [];
-    
-    for(i = 0; i < 25; i++) {
-        lettersArray[i] = wordArray.charAt(i);
+function makeBlanks()  {
+    let blank = "_";
+    let wordLength = randomWord[randomIndex].length;
+    for(i=0; i <= wordLength - 1 ;i++) {
+        let output = blank
     }
-    /*
-    After generate randomIndex
-    get word that corresponds to randomIndex
-    make new array (store indiv letters)
-    make for loop to count characters/letters in word (make use of return then break in loop)
-    */
-}
-
-function makeBlanks() 
-    /*
-    Just run array in store letters (could be mixed in as one function but idk
-    for now we are just brain storming)
-
-    Thinking of this being a for loop and it output blanks
-    */
 }
 
 function keyBoardLetter(letterClicked) {
@@ -52,18 +42,12 @@ function space() {
 }
 
 function checkLetter() {
-    /*sir kyle said there was function to find letter lowkey so we just use that
-    if letter is wrong minus lives*/
+    for (i=0; i<= wordLength; i++) {
+        
+    }
 }
 
 function hangmanGraphics(playerLives) {
-    if () {
-
-    } else if () {
-
-    } else {
-
-    }
 }
 
 function playHangman() {
